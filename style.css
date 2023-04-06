@@ -8,6 +8,7 @@
 }
 body{
     animation: body 2s linear infinite;
+    background: #695e5e;
 }
 
 @keyframes body {
@@ -314,4 +315,73 @@ hr {
 .foter__222{
     display: flex;
 }
+@media screen and (max-width: 767px) {
+.header__menu {
+    display: none;
+}
+  
+.header__logo {
+    font-size: 24px;
+    color: #0d23eb;
+}
+  
+.main__block-card img {
+    max-width: 1200px;
+}
+  
+.main__content-title {
+    font-size: 24px;
+    color: #0cc0c0;
+}
+  
+.main__content-text {
+    font-size: 18px;
+    color: #990dda;
+}
+  
+.man-title {
+    font-size: 24px;
+}
+  
+.man-text {
+    font-size: 14px;
+}
+  
+.man_hover .hover__list-item img {
+    max-width: 24px;
+}
+}
+  
+  @media screen and (max-width: 575px) {
+.header__logo {
+    font-size: 20px;
+    color: #00ff2a;
+}
+  
+.main__block-card img {
+    max-width: 80px;
+}
+  
+.main__content-title {
+    font-size: 20px;
+    color: #003cff;
+}
+  
+.main__content-text {
+    font-size: 16px;
+    color: #ff0000;
+}
+  
+.man-title {
+    font-size: 20px;
+}
+  
+.man-text {
+    font-size: 12px;
+}
+  
+.man_hover .hover__list-item img {
+    max-width: 20px;
+}
 
+}
