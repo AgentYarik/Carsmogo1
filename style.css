@@ -8,7 +8,7 @@
 }
 body{
     animation: body 2s linear infinite;
-    background: #695e5e;
+    background: #ffffff;
 }
 
 @keyframes body {
@@ -29,7 +29,8 @@ body{
     }
 }
 .header{
-    background: #3129299f;
+    background: #615d5da6;
+    max-width: 1200px;
 }
 .header__body {
     display: flex;
@@ -42,6 +43,7 @@ body{
 .header__logo {
     transition: 0.4s;
     color:#d49b9b;
+    border: 1px solid #000;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -59,7 +61,7 @@ body{
     align-items: center;
 }
 .header__menu-item {
-    margin-left: 60px;
+    margin-left: 20px;
     cursor: pointer;
     transition: 0.4s;
     font-family: 'Montserrat';
@@ -181,7 +183,7 @@ hr {
     }
 }
 .main__block-card { 
-    width: 327.78px;
+    max-width: 327.78px;
     margin: 100px auto;
     display: flex;
     align-items: flex-start; 
@@ -206,10 +208,11 @@ hr {
     margin-top: 27px;
 }
 .man {
-    width: 390px;
+    max-width: 390px;
     height: 556px;
     text-align: center;
     position: relative;
+    max-width: 1200px;
 }
 .man-photo {
 }
@@ -221,6 +224,7 @@ hr {
     font-size: 14px;
     font-variant: all-small-caps;
     color: #333333;
+    top: 0;
 }
 .man-text {
     margin-top: 11px;
@@ -232,7 +236,7 @@ hr {
 }
 .man_hover{
     position: absolute;
-    width: 380px;
+    max-width: 380px;
     height: 470px;
     top: -10px;
     left: -10px;
@@ -265,7 +269,7 @@ hr {
 }
 .hover__list-item{
     margin:  0 1px;
-    width: 57px;
+    max-width: 57px;
     height: 57px;
     display: flex;
     justify-content: center;
@@ -273,14 +277,13 @@ hr {
     background: #E5CF82;
 }
 .footer {
-    width: 1200px;
+    max-width: 1200px;
     border-top: 1px solid #B6B6B6;
     margin: 0 auto;
     margin-top: 60px;
     padding-top: 25px;
     display: flex;
     justify-content: space-between;
-    
 }
 .footer__text {
     font-family: 'Montserrat';
@@ -291,7 +294,7 @@ hr {
     color: #333333;
 }
 .footer__button {
-    width: 150px;
+    max-width: 150px;
     height: 40px;
     background: #95E1D3;
     color: #fff;
@@ -306,7 +309,7 @@ hr {
     
 }
 .input__123 {
-    width: 230px;
+    max-width: 230px;
     height: 39px;
     border: 1px solid #B6B6B6;
     color: #B6B6B6;
@@ -315,73 +318,148 @@ hr {
 .foter__222{
     display: flex;
 }
-@media screen and (max-width: 767px) {
-.header__menu {
-    display: none;
+
+/* Стилі для великих екранів (дисплей максимум 1199рх) */
+@media (max-width: 1199px) {
 }
 
-.header__logo {
-    font-size: 24px;
-    color: #0d23eb;
+/* Стилі для середніх екранів (дисплей максимум 991рх) */
+@media (max-width: 991px) {
+    
 }
 
-.main__block-card img {
-    max-width: 1200px;
+/* Стилі для малих екранів (дисплей максимум 767рх) */
+@media (max-width: 767px) {
+    .mans{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .foter__222{
+        margin: 15px auto;
+    }
 }
 
-.main__content-title {
-    font-size: 24px;
-    color: #0cc0c0;
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */
+@media (max-width: 575px) {
+    .header__menu-item{
+        display: none;
+    }
+    .main__block-card{
+        margin: 40px auto;
+    }
 }
 
-.main__content-text {
-    font-size: 18px;
-    color: #990dda;
-}
 
-.man-title {
-    font-size: 24px;
-}
 
-.man-text {
-    font-size: 14px;
-}
 
-.man_hover .hover__list-item img {
-    max-width: 24px;
-}
-}
 
-@media screen and (max-width: 575px) {
-.header__logo {
-    font-size: 20px;
-    color: #00ff2a;
-}
 
-.main__block-card img {
-    max-width: 80px;
-}
 
-.main__content-title {
-    font-size: 20px;
-    color: #003cff;
-}
 
-.main__content-text {
-    font-size: 16px;
-    color: #ff0000;
-}
 
-.man-title {
-    font-size: 20px;
-}
 
-.man-text {
-    font-size: 12px;
-}
 
-.man_hover .hover__list-item img {
-    max-width: 20px;
-}
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
